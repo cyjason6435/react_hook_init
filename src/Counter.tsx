@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./styles.css";
+import { updateAdd, testUpdateAdd } from "./format";
 
 export default function Counter() {
   const [count, setCount] = useState(0);
@@ -12,6 +13,8 @@ export default function Counter() {
       console.log(`You clicked ${count} times`);
       console.log(`it cause bby render click and then make a new async call`);
     }, 100);
+
+    testUpdateAdd();
   });
 
   return (

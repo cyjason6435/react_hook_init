@@ -1,12 +1,8 @@
 {
-  "name": "react-typescript",
+  "name": "react-ts-loadsh-test",
   "version": "1.0.0",
-  "description": "React and TypeScript example starter project",
-  "keywords": [
-    "typescript",
-    "react",
-    "starter"
-  ],
+  "description": "",
+  "keywords": [],
   "main": "src/index.tsx",
   "dependencies": {
     "lodash": "4.17.20",
