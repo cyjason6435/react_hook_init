@@ -16,23 +16,23 @@
  *  
  * */
 
-// import * as _ from 'lodash'
+import * as _ from "lodash";
 // import * as React from 'react'
 
 const updateAdd = function (index: number, range = {}) {
   let r = {};
-  // Object.entries(range)
-  //   .map((a, i) => {
-  //     let [k, v] = a;
-  //     if (Number(k) > index) {
-  //       return [Number(k) + 1, v];
-  //     }
-  //     return a;
-  //   })
-  //   .forEach((pair) => {
-  //     let [k, v] = pair;
-  //     r[k] = v;
-  //   });
+  Object.entries(range)
+    .map((a, i) => {
+      let [k, v] = a;
+      if (Number(k) > index) {
+        return [Number(k) + 1, v];
+      }
+      return a;
+    })
+    .forEach((pair) => {
+      let [k, v] = pair;
+      r[k] = v;
+    });
   return r;
 };
 
@@ -47,5 +47,7 @@ const testUpdateAdd = function () {
   console.log("debug testUpdateAdd", updateAdd(i, r));
   return updateAdd(i, r);
 };
+
+const sort = function () {};
 
 export { testUpdateAdd, testUpdateAdd };
